@@ -10,22 +10,33 @@ Laporan Resmi Praktikum Jaringan Komputer Modul 1
 ### Soal 1
 User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
 
+**Penyelesaian:**
+
+Pertama melakukan filter untuk mendapatkan paket data yang menggunakan protokol FTP dengan kueri filter ```ftp```, berikutinya mencari paket data yang menggunakan perintah STOR, yaitu perintah yang digunakan untuk mengunggah suatu file, didapatkan yaitu nomor paket 147. Lalu untuk mendapatkan sequence number (raw) dan acknowledge number (raw), dengan meng-klik paket tersebut, dan pada bagian kiri bawah, membuka _dropdown_ Transmission Control Protocol, pada bagian kiri bawah.
+
+![1a](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/2222cb16-2ee2-4163-83c3-fafc6b709b89)
+
+Berikutnya, yaitu mendapatkan respon dari aktivitas tersebut. Kita melihat melalui wireshark (paket 147, kolom info) bahwa file yang diunggah adalah file _.zip_, Maka pada kita perlu mencari paket data yang juga mengandung file _.zip_ tersebut. Karena merupakan respon, maka paket tersebut berada setelah dari paket 147, dan ternyata paket tersebut bersebelahan dengan paket 147. Lalu untuk mendapatkan sequence number (raw) dan acknowledge number (raw), sama seperti pada langkah sebelumnya.
+
+![1b](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/b238a51e-7c46-4486-bbd4-6216783db273)
+
 - Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
-    **Jawab:**
+    **Jawab:** 258040667
     
 - Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
-    **Jawab:**
+    **Jawab:** 1044861039
 
 - Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
-    **Jawab:**
+    **Jawab:** 1044861039
 
 - Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
   
-    **Jawab:**
+    **Jawab:** 258040696
 
+![1c](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/5ca8b91b-a7cc-43ee-a7d9-0492b9dbbd83)
 
 ### Soal 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!

@@ -196,4 +196,9 @@ Kita menggunakan `ip.src == 10.51.40.1` untuk mendapatkan paket yang berasal dar
 
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
+![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/35d4a993-e5ac-4c2b-8fdd-2ee0f53d8229)
+![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/e37f522b-a0e3-465e-9ae7-d531c5ec5ed7)
+![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/da25f7cb-6b23-474f-bd30-ae03e4c22429)
+![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/55f338d2-10e6-48aa-b752-5756ead34e2d)
+
 **Jawab:**

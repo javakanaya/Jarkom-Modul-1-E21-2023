@@ -85,22 +85,45 @@ Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal be
 ### Soal 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
-**Jawab:**
+**Penyelesaian:**
+
+Sesuai Perintah soal, yaitu menuju ke paket nomor 130. Lalu diklik, dan pada dropdown _User Datagram Protocol_ akan terdapat nilai Checksum
+
+![4](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/a09f4cd5-1284-4764-8755-d31bc7d8e712)
+
+**Jawab:** 0x18e5
 
 ### Soal 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 
+![5a](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/75ea640e-b59d-4070-9fc9-25c240f98850)
+
+![5b](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/49cb7e80-5383-4c1e-a6db-edc535d736a0)
+
+![5c](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/489bb932-3789-4c56-ad00-d35d305240eb)
+
+![5d](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/0cba4f8f-fab1-4ae1-9dfe-1a73645c5dc5)
+
 - Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+
+   ![5f](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/5405ec6e-6191-4077-ae57-beb791e26122)
 
     **Jawab:**
 
 - Port berapakah pada server yang digunakan untuk service SMTP?
 
+   ![5g](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/0ab6a0ff-378f-493b-a670-d395e82c44b2)
+
     **Jawab:**
 
 - Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+  
+   ![5h](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/5865f0b9-b8e3-4785-8f02-51773403899c)
 
     **Jawab:**
+  
+![5e](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/8683ed13-8650-4ba2-909c-ae250fc5ebe8)
+
 
 ### Soal 6
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
@@ -110,7 +133,13 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 ### Soal 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
-**Jawab:**
+**Penyelesaian:**
+
+Lakukan filter untuk mendapatkan paket yang menuju ke IP tersebut, dengan menggunakan kueri filter berikut ```ip.src == 184.87.193.88```. Terlihat hanya terdapat 6 paket yang menuju ke IP tersebut.
+
+![7](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/87474722/38ecfb66-ae57-4d1e-b34b-65faf867bf86)
+
+**Jawab:** 6
 
 ### Soal 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)

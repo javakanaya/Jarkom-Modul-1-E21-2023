@@ -120,7 +120,11 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 ### Soal 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 
-**Jawab:**
+**Penyelesaian:**
+
+Kita menggunakan ```ip.src == 10.51.40.1``` untuk mendapatkan paket yang berasal dari alamat tersebut. dan ```ip.dst != 10.39.55.34``` untuk mendapatkan paket yang tidak menuju ke alamat tersebut. Keduanya digabungkan dengan operator logika ```&&``` yang berarti kedua kondisi harus terpenuhi, maka hasil filter akan menampilkan paket-paket yang berasal dari alamat ```10.51.40.1``` dan tidak menuju ke alamat ```10.39.55.34```.
+
+**Jawab:** ```ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
 
 ### Soal 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet

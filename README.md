@@ -196,9 +196,40 @@ Kita menggunakan `ip.src == 10.51.40.1` untuk mendapatkan paket yang berasal dar
 
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
+**Penyelesaian:**
+
+Lakukan display filter hanya untuk paket yang menggunakan protocol "Telnet" dengan sesimple mengetik "telnet" pada display filter bar.
+
 ![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/35d4a993-e5ac-4c2b-8fdd-2ee0f53d8229)
+
+Pada paket-paket telnet tersebut ada banyak percobaan untuk login tetapi kita hanya ingin mencari paket yang mengindikasi sukses Login. Jika paket login berhasil ditemukan kemungkinan paket paket sebelumnya yang berasal dari IP client merupakan paket yang dikirimkan dan berupa kredensial dari user yang tepat dan berhasil login.
+
 ![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/e37f522b-a0e3-465e-9ae7-d531c5ec5ed7)
+
+Kita coba lihat 1 paket diatasnya dan ada data berupa text yaitu `kesayangannyak0k0``
+
 ![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/da25f7cb-6b23-474f-bd30-ae03e4c22429)
+
+Dan beberapa data diatasnya merupakan 1 char, tetapi char ini memiliki pola yang menarik dan tidak random yang tersebar pada paket yang ada pada screenshot dibawah.
+
 ![image](https://github.com/javakanaya/Jarkom-Modul-1-E21-2023/assets/27951856/55f338d2-10e6-48aa-b752-5756ead34e2d)
 
-**Jawab:**
+yang kira kira berisi.
+
+```
+d
+d
+h
+h
+a
+a
+f
+f
+i
+i
+n
+n
+```
+
+dengan beberapa paket sebelumnya yang juga ada mengirim user:pass berupa dhafin:kesayangannyak0k0
+**Jawab: dhafin:kesayangannyak0k0**
